@@ -18,4 +18,16 @@ class App extends Component {
   }
 }
 
+function Message(props){
+  return <span>{'Hello, ' + props.name //JAVAScript in JSX enclose with {}
+                                            }</span>;
+}
+function HelloMessage(){
+  return  <h1><Message name='World'/></h1>; //JSX
+}
+
+ 
+
 export default App;
+export { HelloMessage } ;
+export { Message } ;
